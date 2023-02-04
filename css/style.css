@@ -93,3 +93,19 @@ body {
   color: #fff;
   opacity: 1;
 }
+
+@media (max-width: 600px) {
+  #hour_text {
+    width: 200px;
+  }
+
+  #description_text {
+    width: 340px;
+  }
+
+  #initiative_text,
+  #zara_development_text,
+  #discover_text {
+    width: 350px;
+  }
+}
