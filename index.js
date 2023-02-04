@@ -1,6 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
 
 const bgVideo = document.querySelector("#bgVideo");
+const section1 = document.querySelector("#section1");
+const section2 = document.querySelector("#section2");
+const section3 = document.querySelector("#section3");
 
 bgVideo.load();
 bgVideo.currentTime = 0;
@@ -24,3 +27,59 @@ sections.forEach((step, i) => {
     }
   );
 });
+
+// Dissapear section1
+gsap.to(section1, {
+  opacity: 0,
+  scrollTrigger: {
+    trigger: section1,
+    start: "bottom bottom",
+    end: "bottom 85%",
+    scrub: true,
+  },
+});
+
+// Dissapear section2
+gsap.fromTo(
+  section2,
+  { opacity: 1 },
+  {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: section2,
+      start: "110% bottom",
+      end: "120% bottom",
+      scrub: true,
+    },
+  }
+);
+
+// Show section2
+gsap.fromTo(
+  section2,
+  { opacity: 0 },
+  {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: section2,
+      start: "80% 90%",
+      end: "85% 80%",
+      scrub: true,
+    },
+  }
+);
+
+// Show section3
+gsap.fromTo(
+  section3,
+  { opacity: 0 },
+  {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: section3,
+      start: "80% bottom",
+      end: "85% 80%",
+      scrub: true,
+    },
+  }
+);
