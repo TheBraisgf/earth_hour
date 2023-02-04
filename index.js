@@ -1,10 +1,22 @@
 gsap.registerPlugin(ScrollTrigger);
 
 const bgVideo = document.querySelector("#bgVideo");
+const videoSrc = document.querySelector("#video_source");
 const section1 = document.querySelector("#section1");
 const section2 = document.querySelector("#section2");
 const section3 = document.querySelector("#section3");
 const arrow = document.querySelector("#arrow");
+
+// Handle responsiveness for video src
+var width = window.innerWidth > 0 ? window.innerWidth : screen.width;
+
+if (width < 1200) {
+  //It is a small screen
+  videoSrc.src = "./assets/video/ss22-joinlife-earth-hour.video-1080x1920.mp4";
+} else {
+  //It is a big screen or desktop
+  videoSrc.src = "./assets/video/ss22-joinlife-earth-hour.video-1920x1080.mp4";
+}
 
 bgVideo.load();
 bgVideo.currentTime = 0;
