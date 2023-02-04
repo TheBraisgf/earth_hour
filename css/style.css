@@ -14,6 +14,13 @@ body {
   overflow-y: scroll;
 }
 
+#arrow {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 3rem;
+  margin-left: 50%;
+}
+
 .background-container {
   position: fixed;
   display: flex;
