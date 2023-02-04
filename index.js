@@ -93,3 +93,15 @@ gsap.to(arrow, {
   yoyo: true,
   ease: "sine.inOut",
 });
+
+// Arrow rotation
+gsap.to(arrow, {
+  rotation: 180,
+  ease: "none",
+  scrollTrigger: {
+    trigger: section3,
+    start: "70% bottom",
+    end: "85% 90%",
+    scrub: true,
+  },
+});
