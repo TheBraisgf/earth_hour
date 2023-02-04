@@ -14,11 +14,29 @@ body {
   overflow-y: scroll;
 }
 
+#hour_text {
+  margin-bottom: 1rem;
+}
+
 #arrow {
   position: fixed;
   bottom: 0;
   margin-bottom: 3rem;
   margin-left: 50%;
+}
+
+#date_text,
+#zara_development_text,
+#discover_text {
+  margin-bottom: 3rem;
+}
+
+#description_text {
+  margin-bottom: 4rem;
+}
+
+#date_text {
+  margin-bottom: 3rem;
 }
 
 .background-container {
