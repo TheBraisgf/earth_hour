@@ -10,6 +10,13 @@ bgVideo.load();
 bgVideo.currentTime = 0;
 bgVideo.pause();
 
+// Handle arrow action
+document.getElementById("arrow").addEventListener("click", scrollToTop);
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
 let sections = gsap.utils.toArray(".step");
 sections.forEach((step, i) => {
   // Video scrolling
