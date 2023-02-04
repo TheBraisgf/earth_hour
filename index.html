@@ -11,7 +11,7 @@
   <body>
     <div id="background-container" class="background-container">
       <div id="video-container" class="video-container">
-        <video id="bgVideo" autoplay>
+        <video id="bgVideo">
           <source
             id="video_source"
             src="./assets/video/ss22-joinlife-earth-hour.video-1080x1920.mp4"
@@ -20,5 +20,19 @@
         </video>
       </div>
     </div>
+    <div id="scroll-container" class="scroll-container">
+      <section id="step0" class="step">
+        <div id="section1"></div>
+      </section>
+      <section class="step">
+        <div id="section2"></div>
+      </section>
+      <section class="step">
+        <div id="section3"></div>
+      </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
