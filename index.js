@@ -4,6 +4,7 @@ const bgVideo = document.querySelector("#bgVideo");
 const section1 = document.querySelector("#section1");
 const section2 = document.querySelector("#section2");
 const section3 = document.querySelector("#section3");
+const arrow = document.querySelector("#arrow");
 
 bgVideo.load();
 bgVideo.currentTime = 0;
@@ -83,3 +84,12 @@ gsap.fromTo(
     },
   }
 );
+
+// Arrow blink
+gsap.to(arrow, {
+  duration: 1,
+  opacity: 0,
+  repeat: -1,
+  yoyo: true,
+  ease: "sine.inOut",
+});
